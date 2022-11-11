@@ -1,0 +1,10 @@
+html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+        width: 500px;
+      }
