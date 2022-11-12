@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Animate layer view effect | Sample | ArcGIS API for JavaScript 4.25</title>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.25/esri/themes/light/main.css" />
+    <script src="https://js.arcgis.com/4.25/"></script>
+
+  </head>
+
+  <body>
+    <div id="applicationDiv">
+      <div id="viewDiv">
+        <div id="titleDiv" class="esri-widget">
+          Obama / McCain 2008 Election - voting districts gap
+        </div>
+      </div>
+      <div id="sliderContainer" class="esri-widget">
+        <span id="sliderValue"></span>
+        <div id="sliderInnerContainer">
+          <div id="slider"></div>
+        </div>
+        <div id="playButton" class="esri-widget esri-widget--button toggle-button">
+          <div>
+            <span class="toggle-button-icon esri-icon-play" aria-label="play icon"></span>
+            Play
+          </div>
+          <div>
+            <span class="toggle-button-icon esri-icon-pause" aria-label="pause icon"></span>
+            Pause
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="tooltipContent" class="tooltip-content" style="visibility: hidden;">
+      <div id="chart" class="chart">
+        <div class="row democrat">
+          <div class="labels"><span>Obama:</span></div>
+          <div class="data"><div class="bar"></div></div>
+          <div class="value"><span></span></div>
+        </div>
+        <div class="row republican">
+          <div class="labels"><span>McCain:</span></div>
+          <div class="data"><div class="bar"></div></div>
+          <div class="value"><span></span></div>
+        </div>
+        <div class="row gap">
+          <div class="labels"><span>Gap:</span></div>
+          <div class="data">
+            <div class="bar"><div></div></div>
+          </div>
+          <div class="value"><span></span></div>
+        </div>
+      </div>
+      <div class="tooltip-text">Click to view precincts with similar gap</div>
+    </div>
+  </body>
+</html>
